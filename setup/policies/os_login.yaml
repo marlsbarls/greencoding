@@ -1,4 +1,4 @@
-name: projects/167746814725/policies/compute.requireOsLogin
+name: projects/409158233310/policies/compute.requireOsLogin
 spec:
   rules:
   - enforce: false
