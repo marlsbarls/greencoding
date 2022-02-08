@@ -1,2 +1,2 @@
 heapq
-numpy
+numpy==1.16.6
