@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  namespace: test-namespace
+  name: job1
+spec:
+  parallelism: 1
+  completions: 10
+  template:
+    spec:
+      containers:
+      - name: webserver
+        image: gcr.io/midietz13/test123
+      restartPolicy: Never
+  backoffLimit: 0
