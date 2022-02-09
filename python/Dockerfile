@@ -11,4 +11,4 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 # Run the applications
-CMD ["python", "main.py"]
+CMD ["python", "fibonacci.py"]

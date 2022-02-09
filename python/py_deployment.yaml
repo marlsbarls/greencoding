@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  namespace: benchmark-fib-py-1
+  name: bm-fib-py
+spec:
+  parallelism: 1
+  completions: 10
+  template:
+    spec:
+      containers:
+      - name: test
+        image: gcr.io/greenops-demo-env/benchmark_fibonacci_python
+      restartPolicy: Never
+  backoffLimit: 0

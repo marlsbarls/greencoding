@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  namespace: benchmark-fib-go-1
+  name: bm-fib-go
+spec:
+  parallelism: 1
+  completions: 10
+  template:
+    spec:
+      containers:
+      - name: test
+        image: gcr.io/greenops-demo-env/benchmark_fibonacci_go
+      restartPolicy: Never
+  backoffLimit: 0

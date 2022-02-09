@@ -25,6 +25,6 @@ func fibIter(n uint64) *big.Int {
 }
 
 func main() {
-	fmt.Println(fib(46))
-	fmt.Println(fibIter(46))
+	fmt.Println(fib(42))
+	fmt.Println(fibIter(42))
 }

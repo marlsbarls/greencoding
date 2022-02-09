@@ -6,4 +6,5 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["java", "fibonacci.java"]
+RUN javac Fibonacci.java
+CMD ["java", "Fibonacci"]

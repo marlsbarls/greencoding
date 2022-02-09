@@ -14,3 +14,8 @@ def fibRec(n):
         return n
     else:
         return fibRec(n-1) + fibRec(n-2)
+
+# execute
+fib_input = 42
+print(fibIter(fib_input))
+print(fibRec(fib_input))

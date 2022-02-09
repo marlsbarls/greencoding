@@ -1,4 +1,4 @@
-class Main{
+class Fibonacci{
     public static long fib(long n) {
         if (n <= 0)
         return 0;
@@ -32,7 +32,7 @@ class Main{
 
     public static void main(String args[]) 
     {
-	    System.out.println(fib(46));
-        System.out.println(recFibN(46));
+	    System.out.println(fib(42));
+        System.out.println(recFibN(42));
     }
 }
